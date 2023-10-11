@@ -1,16 +1,30 @@
 ---
 import Home from '../layouts/Home.astro';
+import { Icon } from "astro-icon";
 ---
 
+<script>
+	import { smoothScroll } from "../util/scroll";
+
+	document.querySelector("#herobutton")?.addEventListener('click', () => {
+		smoothScroll("#therobot");
+	});
+</script>
+
 <Home title="Eastwood Robotics">
-	<div class="hero min-h-screen" style="background-image: url(/hero-image.jpg);">
+    <div class="hero min-h-screen" style="background-image: url(/hero-image.jpg);">
 		<div class="hero-overlay bg-opacity-60"></div>
 		<div class="hero-content text-center text-neutral-content">
 		  <div class="max-w-md">
-			<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-			<p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-			<button class="btn btn-primary">Get Started</button>
+			<h1 class="mb-5 text-5xl font-bold">Welcome to the Operating Room</h1>
+			<p class="mb-5">At Eastwood Robotics we strive to be the best in robotics technologies.</p>
+			<button id="herobutton" class="btn btn-primary flex flex-row mx-auto">
+				<p class="pt-2 py-2">Get Started</p>
+				<Icon pack="mdi" name="arrow-downward" class="text-white w-8 animate-bounce mt-2" />
 		  </div>
 		</div>
 	  </div>
+	<div class="bg-white">
+        <h1 id="therobot" class="text-5xl py-8 text-center font-bold">The Robot</h1>
+    </div>
 </Home>
