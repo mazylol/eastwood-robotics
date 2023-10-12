@@ -1,60 +1,83 @@
 ---
-import Home from '../layouts/Home.astro';
+import Home from "../layouts/Home.astro";
 import { Icon } from "astro-icon";
 ---
 
 <script>
-	import { smoothScroll } from "../util/scroll";
+    import { smoothScroll } from "../util/scroll";
 
-	document.querySelector("#herobutton")?.addEventListener('click', () => {
-		smoothScroll("#therobot");
-	});
+    document.querySelector("#herobutton")?.addEventListener("click", () => {
+        smoothScroll("#therobot");
+    });
 </script>
 
 <Home title="Eastwood Robotics">
-    <div class="hero min-h-screen" style="background-image: url(/hero-image.jpg);">
-		<div class="hero-overlay bg-opacity-60"></div>
-		<div class="hero-content text-center text-neutral-content">
-		  <div class="max-w-md">
-			<h1 class="mb-5 text-5xl font-bold">Welcome to the Operating Room</h1>
-			<p class="mb-5">At Eastwood Robotics we strive to be the best in robotics technologies.</p>
-			<button id="herobutton" class="btn btn-primary flex flex-row mx-auto">
-				<p class="pt-2 py-2">Get Started</p>
-				<Icon pack="mdi" name="arrow-downward" class="text-white w-8 animate-bounce mt-2" />
-		  </div>
-		</div>
-	  </div>
-	<div class="bg-neutral-300">
-        <h1 id="therobot" class="text-5xl py-8 text-center font-bold">The Robot</h1>
+    <div
+        class="hero min-h-screen"
+        style="background-image: url(/hero-image.jpg);"
+    >
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">
+                    Welcome to the Operating Room
+                </h1>
+                <p class="mb-5">
+                    At Eastwood Robotics we strive to be the best in robotics
+                    technologies.
+                </p>
+                <button
+                    id="herobutton"
+                    class="btn btn-primary flex flex-row mx-auto"
+                >
+                    <p class="pt-2 py-2">Get Started</p>
+                    <Icon
+                        pack="mdi"
+                        name="arrow-downward"
+                        class="text-white w-8 animate-bounce mt-2"
+                    />
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-neutral-300">
+        <h1 id="therobot" class="text-5xl py-8 text-center font-bold">
+            The Robot
+        </h1>
         <div class="bg-white mx-8 rounded-lg">
-            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div
+                class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+            >
                 <img src="/robot2.jpg" class="pt-4 pl-4" />
                 <div class="col-span-2">
                     <p class="text-lg px-4 py-4 col-span-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                        vitae diam euismod, aliquam odio quis, facilisis nunc. Donec
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla vitae diam euismod, aliquam odio quis, facilisis
+                        nunc. Donec aliquam, nisl vitae aliquam ultricies, nunc
+                        nisl aliquet sapien, nec aliquam nisl nisl vitae nisl.
+                        Donec aliquam, nisl vitae aliquam ultricies, nunc nisl
+                        aliquet sapien, nec aliquam nisl nisl vitae nisl. Donec
                         aliquam, nisl vitae aliquam ultricies, nunc nisl aliquet
-                        sapien, nec aliquam nisl nisl vitae nisl. Donec aliquam, nisl
-                        vitae aliquam ultricies, nunc nisl aliquet sapien, nec aliquam
+                        sapien, nec aliquam nisl nisl vitae nisl. Donec aliquam,
+                        nisl vitae aliquam ultricies, nunc nisl aliquet sapien,
+                        nec aliquam nisl nisl vitae nisl. Donec aliquam, nisl
+                        vitae aliquam ultricies, nunc nisl aliquet sapien, nec
+                        aliquam nisl nisl vitae nisl. Donec aliquam, nisl vitae
+                        aliquam ultricies, nunc nisl aliquet sapien, nec aliquam
                         nisl nisl vitae nisl. Donec aliquam, nisl vitae aliquam
-                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl nisl
-                        vitae nisl. Donec aliquam, nisl vitae aliquam ultricies, nunc
-                        nisl aliquet sapien, nec aliquam nisl nisl vitae nisl. Donec
-                        aliquam, nisl vitae aliquam ultricies, nunc nisl aliquet
-                        sapien, nec aliquam nisl nisl vitae nisl. Donec aliquam, nisl
-                        vitae aliquam ultricies, nunc nisl aliquet sapien, nec aliquam
-                        nisl nisl vitae nisl. Donec aliquam, nisl vitae aliquam
-                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl nisl
-                        vitae nisl. Donec aliquam, nisl vitae aliquam ultricies, nunc
-                        nisl aliquet sapien, nec aliquam nisl nisl vitae nisl. Donec
-                        aliquam, nisl vitae aliquam ultricies, nunc nisl aliquet
-                        sapien, nec aliquam nisl nisl vitae nisl. Donec aliquam, nisl
-                        vitae aliquam ultricies, nunc nisl aliquet sapien, nec aliquam
-                        nisl nisl vitae nisl. Donec aliquam, nisl vitae aliquam
-                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl nisl
-                        vitae nisl. Donec aliquam, nisl vitae aliquam ultricies, nunc
-                        nisl aliquet sapien, nec aliquam nisl nisl vitae nisl. Donec
-                        aliquam, nisl vitae aliquam ultricies, nunc nisl aliqu
+                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl
+                        nisl vitae nisl. Donec aliquam, nisl vitae aliquam
+                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl
+                        nisl vitae nisl. Donec aliquam, nisl vitae aliquam
+                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl
+                        nisl vitae nisl. Donec aliquam, nisl vitae aliquam
+                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl
+                        nisl vitae nisl. Donec aliquam, nisl vitae aliquam
+                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl
+                        nisl vitae nisl. Donec aliquam, nisl vitae aliquam
+                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl
+                        nisl vitae nisl. Donec aliquam, nisl vitae aliquam
+                        ultricies, nunc nisl aliqu
                     </p>
                 </div>
                 <div class="mx-auto">
