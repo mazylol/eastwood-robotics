@@ -1,4 +1,9 @@
-<div class="navbar bg-neutral-300">
+---
+import Icon from "astro-icon";
+
+---
+
+<div class="navbar bg-white">
     <div class="navbar-start">
         <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -36,5 +41,17 @@
             <li><a>History</a></li>
             <li><a>Gallery</a></li>
         </ul>
+    </div>
+    <div class="navbar-end hidden lg:flex">
+        <a href="https://twitter.com/els_eagles">
+            <Icon
+                pack="mdi"
+                name="twitter"
+                class="w-12 mx-2 hover:bg-blue-500 hover:text-white py-2 px-2 rounded-md transition-all duration-100"
+            />
+        </a>
+        <a href="https://eastwoodschools.org">
+            <Icon pack="ph" name="link-bold" class="w-12 mx-2 hover:bg-primary hover:text-white py-2 px-2 rounded-md transition-all duration-100" />
+        </a>
     </div>
 </div>
