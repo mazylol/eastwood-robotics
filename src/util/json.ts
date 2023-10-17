@@ -9,6 +9,7 @@ type Member = {
     grade: number;
     roles: string[];
     tidbit: string;
+    image: string;
 };
 
 export function readMembers(): Member[] {

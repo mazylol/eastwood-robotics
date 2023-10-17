@@ -3,7 +3,8 @@
         "first": "Landon",
         "last": "Porter"
     },
-    "grade": 11,
+    "grade": 10,
     "roles": ["Programming", "Website", "Construction"],
-    "tidbit": "Ello govnah"
+    "tidbit": "Ello govnah",
+    "image": "/team/another.jpg"
 }

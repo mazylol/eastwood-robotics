@@ -1,4 +1,5 @@
 ---
+import Card from "../components/team/Card.astro";
 import Home from "../layouts/Home.astro";
 import { readMembers } from "../util/json";
 
@@ -6,8 +7,21 @@ let members = readMembers();
 ---
 
 <Home title="p">
-    <p>Hi</p>
-    <ul>
-        {members.map((item) => <li>{item.name.first}</li>)}
-    </ul>
+    <h1 class="text-center mt-16 text-6xl font-bold">The Team</h1>
+    <div
+        class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 mx-4 my-4 mt-16"
+    >
+        {
+            members.map((member) => (
+                <Card
+                    name={member.name.first + " " + member.name.last}
+                    grade={member.grade}
+                    roles={member.roles}
+                    image={member.image}
+                >
+                    {member.tidbit}
+                </Card>
+            ))
+        }
+    </div>
 </Home>
