@@ -1,0 +1,13 @@
+---
+import Home from "../layouts/Home.astro";
+import { readMembers } from "../util/json";
+
+let members = readMembers();
+---
+
+<Home title="p">
+    <p>Hi</p>
+    <ul>
+        {members.map((item) => <li>{item.name.first}</li>)}
+    </ul>
+</Home>

@@ -12,6 +12,7 @@
     },
     "dependencies": {
         "@astrojs/tailwind": "^5.0.2",
+        "@types/node": "^20.8.6",
         "astro": "^3.3.0",
         "astro-icon": "^0.8.1",
         "daisyui": "^3.9.2",
