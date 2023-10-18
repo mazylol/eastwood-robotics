@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-type Member = {
+export type Member = {
     name: {
         first: string;
         last: string;
