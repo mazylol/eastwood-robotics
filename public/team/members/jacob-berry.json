@@ -1,0 +1,10 @@
+{
+    "name": {
+        "first": "Jacob",
+        "last": "Berry"
+    },
+    "grade": 6,
+    "roles": [],
+    "tidbit": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    "image": "/team/another.jpg"
+}

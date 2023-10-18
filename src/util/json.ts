@@ -12,6 +12,18 @@ type Member = {
     image: string;
 };
 
+export function alphabetizeMembers(members: Member[]): Member[] {
+    return members.sort((a, b) => {
+        if (a.name.last < b.name.last) {
+            return -1;
+        } else if (a.name.last > b.name.last) {
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+}
+
 export function readMembers(): Member[] {
     const baseDirectory = process.cwd(); // Get the current working directory
     const directoryPath = path.join(baseDirectory, "public/team/members"); // Adjust the path accordingly
@@ -35,5 +47,5 @@ export function readMembers(): Member[] {
         }
     }
 
-    return fileContentsList;
+    return alphabetizeMembers(fileContentsList);
 }

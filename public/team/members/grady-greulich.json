@@ -1,0 +1,10 @@
+{
+    "name": {
+        "first": "Grady",
+        "last": "Greulich"
+    },
+    "grade": 9,
+    "roles": ["Construction"],
+    "tidbit": "lorem ipsum dolor sit amet",
+    "image": "/team/another.jpg"
+}

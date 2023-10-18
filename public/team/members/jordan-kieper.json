@@ -1,0 +1,10 @@
+{
+    "name": {
+        "first": "Jordan",
+        "last": "Kieper"
+    },
+    "grade": 12,
+    "roles": ["Construction", "CAD"],
+    "tidbit": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptates officia temporibus quasi voluptatem aliquid esse nesciunt labore libero suscipit fugiat praesentium quos nihil assumenda, dolores porro consectetur amet voluptate.",
+    "image": "/team/another.jpg"
+}
