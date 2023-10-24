@@ -4,7 +4,7 @@
         "last": "Robinson"
     },
     "grade": 8,
-    "roles": [],
+    "roles": ["Marketing", "Website", "Driving"],
     "tidbit": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem sit alias veritatis animi eaque, ea itaque assumenda illum, eveniet ad. Qui nisi totam maxime voluptates aspernatur, est dolor perferendis!",
-    "image": "/team/another.jpg"
+    "image": "/team/pictures/eddie-robinson.jpg"
 }

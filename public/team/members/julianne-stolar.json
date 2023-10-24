@@ -4,7 +4,7 @@
         "last": "Stolar"
     },
     "grade": 7,
-    "roles": [],
+    "roles": ["Marketing", "Website", "Engineering Notebook"],
     "tidbit": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. A harum voluptates dolores pariatur excepturi voluptate quasi qui doloremque amet nam, repudiandae, quaerat incidunt, accusantium minus obcaecati unde voluptatem tempore labore.",
-    "image": "/team/another.jpg"
+    "image": "/team/pictures/julianne-stolar.jpg"
 }

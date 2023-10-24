@@ -10,6 +10,12 @@ function roleToColor(role: string) {
             return "bg-blue-500";
         case "Marketing":
             return "bg-green-500";
+        case "Video":
+            return "bg-red-500";
+        case "Engineering Notebook":
+            return "bg-cyan-500";
+        case "Driving":
+            return "bg-gray-500";
     }
 }
 
@@ -25,7 +31,7 @@ export default function Card(props: {
             <img
                 src={props.image}
                 alt={props.name}
-                className="w-74 rounded-b-lg mx-auto"
+                className="mx-auto rounded-t-lg"
             />
             <div className="p-4">
                 <h2 className="text-2xl font-bold text-center">
@@ -38,7 +44,7 @@ export default function Card(props: {
                     {props.roles.map((role, key) => {
                         return (
                             <li
-                                className={`py-1 px-2 mx-1 text-xs rounded-md ${roleToColor(
+                                className={`py-1 px-2 mx-1 my-1 text-xs rounded-md ${roleToColor(
                                     role,
                                 )}`}
                                 key={key}
