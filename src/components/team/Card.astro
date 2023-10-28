@@ -1,0 +1,51 @@
+---
+interface Props {
+    name: string;
+    grade: number,
+    roles: string[]
+}
+
+let { name, grade, roles } = Astro.props;
+
+roles = roles.sort()
+
+function roleToColor(role: string) {
+        switch (role) {
+            case "Programming":
+                return "bg-yellow-500";
+            case "Website":
+                return "bg-purple-500";
+            case "Construction":
+                return "bg-blue-500";
+            case "Marketing":
+                return "bg-green-500";
+            case "Video":
+                return "bg-red-500";
+            case "Engineering Notebook":
+                return "bg-cyan-500";
+            case "Driving":
+                return "bg-gray-500";
+            case "Spotting":
+                return "bg-lime-500";
+        }
+    }
+---
+
+<div class="bg-gray-300 rounded-lg shadow-lg">
+    <slot name="image" class="mx-auto rounded-t-lg" />
+    <div class="p-4">
+        <h2 class="text-2xl font-bold text-center">
+            {name}
+            <span class="ml-4 bg-primary p-1 rounded-md text-gray-200">
+                {grade}th
+            </span>
+        </h2>
+        <ul class="sm:text-sm md:text-md lg:text-lg font-semibold flex-wrap flex flex-row text-gray-300 mt-4 justify-center">
+            {roles.map((role) => {
+                return <li class={`py-1 px-2 mx-1 my-1 text-xs rounded-md ${roleToColor(role)}`}>{role}</li>
+            })}
+        </ul>
+        <hr class="my-4 border-b-2 border-gray-500" />
+        <slot name="tidbit" class="text-gray-700" />
+    </div>
+</div>

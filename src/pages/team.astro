@@ -1,11 +1,30 @@
 ---
 import Home from "../layouts/Home.astro";
-import Main from "../components/team/Main.tsx";
 import { readMembers } from "../util/json";
+import Card from "../components/team/Card.astro";
+import { Image } from "astro:assets";
+
+import braydenBarnhartImage from "../images/members/brayden-barnhart.jpeg";
+import addisonGoodletImage from "../images/members/addison-goodlet.jpg";
+import landonPorterImage from "../images/members/landon-porter.jpg";
 
 let members = readMembers();
 ---
 
 <Home title="Team">
-    <Main members={members} client:only="react" />
+    <h1 class="text-center mt-16 text-6xl font-bold">The Team</h1>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 mx-4 my-4 mt-16">
+        <Card name="Brayden Barnhart" grade={9} roles={["Construction", "Driving", "Spotting"]}>
+            <Image src={braydenBarnhartImage} alt="Brayden Barnhart" slot="image" />
+            <p slot="tidbit">Lorem ipsum</p>
+        </Card>
+        <Card name="Addison Goodlet" grade={9} roles={["Marketing"]}>
+            <Image src={addisonGoodletImage} alt="Addison Goodlet" slot="image" />
+            <p slot="tidbit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptates officia temporibus quasi voluptatem aliquid esse nesciunt labore libero suscipit fugiat praesentium quos nihil assumenda, dolores porro consectetur amet voluptate.</p>
+        </Card>
+        <Card name="Landon Porter" grade={11} roles={["Construction", "Website", "Programming"]}>
+            <Image src={landonPorterImage} alt="Landon Porter" slot="image" />
+            <p slot="tidbit">Hi there guys</p>
+        </Card>
+    </div>
 </Home>
