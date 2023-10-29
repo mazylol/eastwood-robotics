@@ -5,5 +5,5 @@ import compressor from "astro-compressor";
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [tailwind(), compressor({ gzip: true, brotli: true })],
+    integrations: [tailwind(), compressor({ gzip: true, brotli: false })],
 });
