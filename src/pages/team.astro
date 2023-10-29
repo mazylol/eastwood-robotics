@@ -1,30 +1,695 @@
 ---
 import Home from "../layouts/Home.astro";
-import { readMembers } from "../util/json";
 import Card from "../components/team/Card.astro";
 import { Image } from "astro:assets";
 
-import braydenBarnhartImage from "../images/members/brayden-barnhart.jpeg";
-import addisonGoodletImage from "../images/members/addison-goodlet.jpg";
-import landonPorterImage from "../images/members/landon-porter.jpg";
+import placeHolderImage from "../images/members/placeholder.png";
 
-let members = readMembers();
+import braydenBarnhartImage from "../images/members/brayden-barnhart.jpeg";
+import lucasFirsdonImage from "../images/members/lucas-firsdon.jpeg";
+import addisonGoodletImage from "../images/members/addison-goodlet.jpg";
+import gradyGreulichImage from "../images/members/grady-greulich.jpeg";
+import dylanHempImage from "../images/members/dylan-hemp.jpg";
+import casenHenlineImage from "../images/members/casen-henline.jpeg";
+import austinMillerImage from "../images/members/austin-miller.jpg";
+import coltonMillerImage from "../images/members/colton-miller.jpg";
+import elliottNafzigerImage from "../images/members/elliott-nafziger.jpg";
+import laylaNewmanImage from "../images/members/layla-newman.jpeg";
+import laurenOestreichImage from "../images/members/lauren-oestreich.jpg";
+import dominicPearceImage from "../images/members/dominic-pearce.jpeg";
+import oliverPhommaleeImage from "../images/members/oliver-phommalee.jpeg";
+import landonPorterImage from "../images/members/landon-porter.jpg";
+import eddieRobinsonImage from "../images/members/eddie-robinson.jpg";
+import ericSanderImage from "../images/members/eric-sander.jpg";
+import billyStarkImage from "../images/members/billy-stark.jpeg";
+import caitlynStinerImage from "../images/members/caitlyn-stiner.jpg";
+import julianneStolarImage from "../images/members/julianne-stolar.jpg";
+import averyTomanskiImage from "../images/members/avery-tomanski.jpeg";
+import mayaZunkImage from "../images/members/maya-zunk.jpg";
 ---
 
 <Home title="Team">
     <h1 class="text-center mt-16 text-6xl font-bold">The Team</h1>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 mx-4 my-4 mt-16">
-        <Card name="Brayden Barnhart" grade={9} roles={["Construction", "Driving", "Spotting"]}>
-            <Image src={braydenBarnhartImage} alt="Brayden Barnhart" slot="image" />
-            <p slot="tidbit">Lorem ipsum</p>
+    <div
+        class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 mx-4 my-4 mt-16"
+    >
+        <Card name="Caleb Abbey" grade={8} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Caleb Abbey"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Nicolas Agee" grade={6} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Nicolas Agee"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Evelyn Althaus" grade={7} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Everlyn Althaus"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card
+            name="Brayden Barnhart"
+            grade={9}
+            roles={["Construction", "Driving", "Spotting"]}
+        >
+            <Image
+                src={braydenBarnhartImage}
+                alt="Brayden Barnhart"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card
+            name="Sydney Bell"
+            grade={9}
+            roles={["Engineering Notebook", "Marketing", "Team Display"]}
+        >
+            <Image
+                src={placeHolderImage}
+                alt="Sydney Bell"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                Eastwood Robotics Club teaches many new things. This year, I
+                have been able to see a surgical robot at Wood County hospital
+                and meet with prominent members of different companies that
+                offer advice about the club and life. The best part of Robotics
+                Club is all the new things I am constantly learning about the
+                world around me.
+            </p>
+        </Card>
+        <Card name="Jacob Berry" grade={6} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Jacob Berry"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Dominic Butler" grade={6} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Dominic Butler"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Matthew Cousino" grade={8} roles={["Construction"]}>
+            <Image
+                src={placeHolderImage}
+                alt="Matthew Cousino"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">Trying something new</p>
+        </Card>
+        <Card
+            name="Lauren Ellis"
+            grade={9}
+            roles={["Engineering Notebook", "Marketing", "Team Display"]}
+        >
+            <Image
+                src={placeHolderImage}
+                alt="Lauren Ellis"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                I enjoyed working with other team members to create the best
+                presentation in our ability. I also enjoyed touring the Wood
+                County Hospital. This was a great experience to see technology I
+                have never seen before.
+            </p>
+        </Card>
+        <Card
+            name="Joshua Finfera"
+            grade={6}
+            roles={["Construction", "Driving", "Spotting"]}
+        >
+            <Image
+                src={placeHolderImage}
+                alt="Joshua Finfera"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                As a fan of Battlebots for 9 years, I enjoy seeing a robotic
+                created and come to life. My long term career plan is to become
+                a roboteer.
+            </p>
+        </Card>
+        <Card name="Lucas Firsdon" grade={9} roles={["Construction"]}>
+            <Image
+                src={lucasFirsdonImage}
+                alt="Lucas Firsdon"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Seth Freeman" grade={7} roles={["Construction"]}>
+            <Image
+                src={placeHolderImage}
+                alt="Seth Freeman"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                Spending time with friends and building things. I also learned
+                many new things.
+            </p>
         </Card>
         <Card name="Addison Goodlet" grade={9} roles={["Marketing"]}>
-            <Image src={addisonGoodletImage} alt="Addison Goodlet" slot="image" />
-            <p slot="tidbit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptates officia temporibus quasi voluptatem aliquid esse nesciunt labore libero suscipit fugiat praesentium quos nihil assumenda, dolores porro consectetur amet voluptate.</p>
+            <Image
+                src={addisonGoodletImage}
+                alt="Addison Goodlet"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                I enjoy being able to share my ideas and interact with people I
+                normally wouldn’t have the opportunity to.
+            </p>
         </Card>
-        <Card name="Landon Porter" grade={11} roles={["Construction", "Website", "Programming"]}>
-            <Image src={landonPorterImage} alt="Landon Porter" slot="image" />
+        <Card
+            name="Grady Greulich"
+            grade={9}
+            roles={["Construction", "Driving", "Spotting"]}
+        >
+            <Image
+                src={gradyGreulichImage}
+                alt="Grady Greulich"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Noah Grover Shuerman" grade={6} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Noah Grover Shuerman"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Ethan Headley" grade={8} roles={["Construction"]}>
+            <Image
+                src={placeHolderImage}
+                alt="Ethan Headley"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                Learning how to build with tools and having fun with friends.
+            </p>
+        </Card>
+        <Card name="Dylan Hemp" grade={6} roles={["Marketing", "Team Display"]}>
+            <Image
+                src={dylanHempImage}
+                alt="Dylan Hemp"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                Working with other people and seeing the final product and all
+                of our hard work pay off.
+            </p>
+        </Card>
+        <Card
+            name="Carson Henline"
+            grade={9}
+            roles={[
+                "Construction",
+                "Programming",
+                "Driving",
+                "Spotting",
+                "T-Shirt",
+            ]}
+        >
+            <Image
+                src={placeHolderImage}
+                alt="Carson Henline"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                My favorite part of robotics is driving the robot that I helped
+                construct.
+            </p>
+        </Card>
+        <Card name="Casen Henline" grade={9} roles={["Construction"]}>
+            <Image
+                src={casenHenlineImage}
+                alt="Casen Henline"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Lucas Jambor" grade={6} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Lucas Jambor"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Carter Joseph" grade={12} roles={["Construction"]}>
+            <Image
+                src={placeHolderImage}
+                alt="Carter Joseph"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Jordan Kieper" grade={12} roles={["Construction"]}>
+            <Image
+                src={placeHolderImage}
+                alt="Jordan Kieper"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card
+            name="Jeb Conkzal"
+            grade={7}
+            roles={[
+                "Engineering Notebook",
+                "Construction",
+                "Programming",
+                "Driving",
+                "Spotting",
+            ]}
+        >
+            <Image
+                src={placeHolderImage}
+                alt="Jeb Conkzal"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                I like getting to use lots of different tools to build the
+                course and the robot.
+            </p>
+        </Card>
+        <Card name="Owen Lawless" grade={6} roles={["Construction"]}>
+            <Image
+                src={placeHolderImage}
+                alt="Owen Lawless"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">I really enjoyed building the course.</p>
+        </Card>
+        <Card
+            name="Andrew Makay"
+            grade={12}
+            roles={["Programming", "Driving", "Spotting"]}
+        >
+            <Image
+                src={placeHolderImage}
+                alt="Andrew Makay"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                The competition and getting to drive the robot, getting to mean
+                something in the competition.
+            </p>
+        </Card>
+        <Card name="Luke Marlowe" grade={8} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Luke Marlowe"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Scott McKenzie" grade={8} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Scott McKenzie"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card
+            name="Austin Miller"
+            grade={10}
+            roles={["Marketing", "Construction", "Driving"]}
+        >
+            <Image
+                src={austinMillerImage}
+                alt="Austin Miller"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card
+            name="Colton Miller"
+            grade={6}
+            roles={["Construction", "Marketing"]}
+        >
+            <Image
+                src={coltonMillerImage}
+                alt="Colton Miller"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Jack Mundrick" grade={6} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Jack Mundrick"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Jameson Myers" grade={6} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Jameson Myers"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Elliott Nafziger" grade={6} roles={["Video"]}>
+            <Image
+                src={elliottNafzigerImage}
+                alt="Elliott Nafziger"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Zander Naplerala" grade={9} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Zander Naplerala"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card
+            name="Layla Newman"
+            grade={9}
+            roles={[
+                "Construction",
+                "Engineering Notebook",
+                "Programming",
+                "Driving",
+                "Spotting",
+            ]}
+        >
+            <Image
+                src={laylaNewmanImage}
+                alt="Layla Newman"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                My favorite part of robotics was helping build a robot and
+                course. I also enjoyed starting to learn how to sketch an idea
+                on graph paper and brainstorming ideas for the robot.
+            </p>
+        </Card>
+        <Card name="Lauren Oestreich" grade={6} roles={["Marketing"]}>
+            <Image
+                src={laurenOestreichImage}
+                alt="Lauren Oestreich"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card
+            name="Dominic Pearce"
+            grade={9}
+            roles={["Engineering Notebook", "Construction", "Programming"]}
+        >
+            <Image
+                src={dominicPearceImage}
+                alt="Dominic Pearce"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                All of the freedom is really nice and the people in robotics are
+                too.
+            </p>
+        </Card>
+        <Card name="Oliver Phommalee" grade={9} roles={["Construction"]}>
+            <Image
+                src={oliverPhommaleeImage}
+                alt="Oliver Phommalee"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card
+            name="Landon Porter"
+            grade={11}
+            roles={["Construction", "Website", "Programming"]}
+        >
+            <Image
+                src={landonPorterImage}
+                alt="Landon Porter"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
             <p slot="tidbit">Hi there guys</p>
+        </Card>
+        <Card
+            name="Eddie Robinson"
+            grade={8}
+            roles={["Website", "Driving", "Spotting", "Video"]}
+        >
+            <Image
+                src={eddieRobinsonImage}
+                alt="Eddie Robinson"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                My favorite part about the Robotics club is the people involved.
+                Everyone, both students and adults, are very considerate and
+                helpful in contributing to the competition.
+            </p>
+        </Card>
+        <Card name="Crosby Rollins-Morlock" grade={7} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Crosby Rollins-Morlock"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Eric Sander" grade={11} roles={["Marketing"]}>
+            <Image
+                src={ericSanderImage}
+                alt="Eric Sander"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                I love getting to work with my peers in Eastwood's Robotics Club
+                where we can grow closer together. The encouraging and accepting
+                environment of the club is truly spectacular, and I thoroughly
+                enjoy every minute I spend working in Robotics Club.
+            </p>
+        </Card>
+        <Card name="Cole Schimmoeller" grade={7} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Cole Schimmoeller"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Jackson Segal" grade={8} roles={["Construction"]}>
+            <Image
+                src={placeHolderImage}
+                alt="Jackson Segal"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">It’s new every year.</p>
+        </Card>
+        <Card
+            name="Noah Sikora"
+            grade={9}
+            roles={["Construction", "Programming", "Driving", "Spotting"]}
+        >
+            <Image
+                src={placeHolderImage}
+                alt="Noah Sikora"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">Driving the robot through the course.</p>
+        </Card>
+        <Card
+            name="Billy Stark"
+            grade={9}
+            roles={["Construction", "Programming", "Driving", "Spotting"]}
+        >
+            <Image
+                src={billyStarkImage}
+                alt="Billy Stark"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                My favorite part about Eastwood Robotics Club is building and
+                programming a robot while having fun and driving and spotting
+                with my friends.
+            </p>
+        </Card>
+        <Card name="Caitlyn Stiner" grade={10} roles={["Marketing"]}>
+            <Image
+                src={caitlynStinerImage}
+                alt="Caitlyn Stiner"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card
+            name="Julianne Stolar"
+            grade={7}
+            roles={["Marketing", "Engineering Notebook", "Team Display"]}
+        >
+            <Image
+                src={julianneStolarImage}
+                alt="Julianne Stolar"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                Building the display is my favorite part because it's fun and
+                hands-on.
+            </p>
+        </Card>
+        <Card name="Aiden Tomanski" grade={6} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Aiden Tomanski"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Avery Tomanski" grade={10} roles={["Construction"]}>
+            <Image
+                src={averyTomanskiImage}
+                alt="Avery Tomanski"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Liam Walsh" grade={7} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Liam Walsh"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Matthew Ward Jr." grade={6} roles={["Construction"]}>
+            <Image
+                src={placeHolderImage}
+                alt="Matthew Ward Jr."
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">
+                Most of the time when I go to robotics some of my friends are
+                there and it makes me have more fun than usual. The main part I
+                like is that I help make a practice course for the robot and I
+                also get to help make the robot.
+            </p>
+        </Card>
+        <Card name="Isaac Wendt" grade={6} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Isaac Wendt"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Godrik Williams" grade={6} roles={[]}>
+            <Image
+                src={placeHolderImage}
+                alt="Godrik Williams"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card
+            name="Christine Wojcik"
+            grade={7}
+            roles={["Engineering Notebook"]}
+        >
+            <Image
+                src={placeHolderImage}
+                alt="Christine Wojcik"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit">Something new</p>
+        </Card>
+        <Card name="Jeremy Wojcik" grade={9} roles={["Construction"]}>
+            <Image
+                src={placeHolderImage}
+                alt="Jeremy Wojcik"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
+        </Card>
+        <Card name="Maya Zunk" grade={9} roles={["Marketing"]}>
+            <Image
+                src={mayaZunkImage}
+                alt="Maya Zunk"
+                slot="image"
+                class="mx-auto rounded-t-lg"
+            />
+            <p slot="tidbit"></p>
         </Card>
     </div>
 </Home>
