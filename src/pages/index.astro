@@ -1,6 +1,23 @@
 ---
+import { Image } from "astro:assets";
 import Home from "../layouts/Home.astro";
 import { Icon } from "astro-icon";
+
+import aroundRobotImage from "../images/gallery/aroundRobot.jpg";
+
+import morrisonLogo from "../images/sponsors/morrison.jpg";
+import agasLogo from "../images/sponsors/agas.svg";
+import dycoLogo from "../images/sponsors/dyco.png";
+import firstsolarLogo from "../images/sponsors/firstsolar.svg";
+import rosenboomLogo from "../images/sponsors/rosenboom.png";
+import pmmiLogo from "../images/sponsors/pmmi.png";
+import nsgLogo from "../images/sponsors/nsg.png";
+import energyharborLogo from "../images/sponsors/energy-harbor.jpg";
+import lifeformationsLogo from "../images/sponsors/lifeformations.jpg";
+import centaurLogo from "../images/sponsors/centaur.png";
+import woodcountryhospitalLogo from "../images/sponsors/woodcountyhospital.png";
+import napoleonmachineLogo from "../images/sponsors/napoleonmachine.webp";
+import pbeLogo from "../images/sponsors/pbe.png";
 ---
 
 <script>
@@ -14,7 +31,7 @@ import { Icon } from "astro-icon";
 <Home title="Eastwood Robotics">
     <div
         class="hero min-h-screen"
-        style="background-image: url(/hero-image.jpg);"
+        style="background-image: url(/banner.JPG);"
     >
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
@@ -40,7 +57,7 @@ import { Icon } from "astro-icon";
             </div>
         </div>
     </div>
-    <div class="bg-neutral-300">
+    <section class="bg-neutral-300">
         <h1 id="therobot" class="text-5xl py-8 text-center font-bold">
             The Robot
         </h1>
@@ -48,69 +65,32 @@ import { Icon } from "astro-icon";
             <div
                 class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
             >
-                <img src="/robot2.jpg" class="pt-4 pl-4" />
+                <Image src={aroundRobotImage} alt="Huddled Around Robot" class="p-4 h-96" />
                 <div class="col-span-2">
                     <p class="text-lg px-4 py-4 col-span-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nulla vitae diam euismod, aliquam odio quis, facilisis
-                        nunc. Donec aliquam, nisl vitae aliquam ultricies, nunc
-                        nisl aliquet sapien, nec aliquam nisl nisl vitae nisl.
-                        Donec aliquam, nisl vitae aliquam ultricies, nunc nisl
-                        aliquet sapien, nec aliquam nisl nisl vitae nisl. Donec
-                        aliquam, nisl vitae aliquam ultricies, nunc nisl aliquet
-                        sapien, nec aliquam nisl nisl vitae nisl. Donec aliquam,
-                        nisl vitae aliquam ultricies, nunc nisl aliquet sapien,
-                        nec aliquam nisl nisl vitae nisl. Donec aliquam, nisl
-                        vitae aliquam ultricies, nunc nisl aliquet sapien, nec
-                        aliquam nisl nisl vitae nisl. Donec aliquam, nisl vitae
-                        aliquam ultricies, nunc nisl aliquet sapien, nec aliquam
-                        nisl nisl vitae nisl. Donec aliquam, nisl vitae aliquam
-                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl
-                        nisl vitae nisl. Donec aliquam, nisl vitae aliquam
-                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl
-                        nisl vitae nisl. Donec aliquam, nisl vitae aliquam
-                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl
-                        nisl vitae nisl. Donec aliquam, nisl vitae aliquam
-                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl
-                        nisl vitae nisl. Donec aliquam, nisl vitae aliquam
-                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl
-                        nisl vitae nisl. Donec aliquam, nisl vitae aliquam
-                        ultricies, nunc nisl aliquet sapien, nec aliquam nisl
-                        nisl vitae nisl. Donec aliquam, nisl vitae aliquam
-                        ultricies, nunc nisl aliqu
+                        The 2023 Eastwood Robot is the pinnicle of robotics performance. Our robot centers around our multi-purpose custom tool that allows us to do the autonomus driving portion, inserting stints, and scraping out arteries all in one. There are also catches on the bottom to capture the blood drops, as well as a robust aluminum dump box. This robot is the result of weeks of engineering and we believe that it will carry us to success this year.
                     </p>
-                </div>
-                <div class="mx-auto">
-                    <h1 class="font-bold text-3xl">Features</h1>
-                    <ul class="list-disc ml-2">
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 3</li>
-                        <li>Feature 4</li>
-                        <li>Feature 5</li>
-                    </ul>
-                </div>
-                <div class="mx-auto">
-                    <h1 class="font-bold text-3xl">Specifications</h1>
-                    <ul class="list-disc ml-2">
-                        <li>Spec 1</li>
-                        <li>Spec 2</li>
-                        <li>Spec 3</li>
-                        <li>Spec 4</li>
-                        <li>Spec 5</li>
-                    </ul>
-                </div>
-                <div class="mx-auto">
-                    <h1 class="font-bold text-3xl">Pricing</h1>
-                    <ul class="list-disc ml-2">
-                        <li>Price 1</li>
-                        <li>Price 2</li>
-                        <li>Price 3</li>
-                        <li>Price 4</li>
-                        <li>Price 5</li>
-                    </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="bg-neutral-300">
+        <h1 class="text-5xl py-8 text-center font-bold">Sponsors</h1>
+        <h3 class="text-2xl pb-8 text-center">We would like to offer a sincere thank you to our sponsors who supported us this year!</h3>
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4 content-center justify-center items-center">
+            <Image src={morrisonLogo} alt="Morrison" class="w-[75%] mx-auto" />
+            <Image src={agasLogo} alt="A-GAS" class="w-[75%]  mx-auto"/>
+            <Image src={dycoLogo} alt="Dyco" class="w-[75%] mx-auto" />
+            <Image src={firstsolarLogo} alt="First Solar" class="w-[75%] mx-auto" />
+            <Image src={rosenboomLogo} alt="Rosenboom" class="w-[75%] mx-auto" />
+            <Image src={pmmiLogo} alt="PMMI" class="w-[75%] mx-auto" />
+            <Image src={nsgLogo} alt="NSG" class="w-[75%] mx-auto" />
+            <Image src={energyharborLogo} alt="Energy Harbor" class="w-[75%] mx-auto" />
+            <Image src={lifeformationsLogo} alt="LifeFormations" class="w-[75%] mx-auto" />
+            <Image src={centaurLogo} alt="Centaur" class="w-[75%] mx-auto" />
+            <Image src={woodcountryhospitalLogo} alt="Wood County Hospital" class="w-[75%] mx-auto" />
+            <Image src={napoleonmachineLogo} alt="Napoleon Machine" class="w-[75%] mx-auto" />
+            <Image src={pbeLogo} alt="PBE" class="w-[75%] mx-auto" />
+        </div>
+    </section>
 </Home>
