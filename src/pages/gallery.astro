@@ -1,0 +1,50 @@
+---
+import Home from "../layouts/Home.astro";
+
+import { Image } from "astro:assets";
+
+import firstMeetingImage from "../images/gallery/first-meeting.jpg";
+import theBrainImage from "../images/gallery/the-brain.jpg";
+import marketingPresentationImage from "../images/gallery/marketingpres.jpg";
+import marketingMeetingImage from "../images/gallery/marketingmeeting.jpg";
+import hospitalImage from "../images/gallery/hospital.jpg";
+import microscopicImage from "../images/gallery/microscopic.jpg";
+import bradnailerImage from "../images/gallery/bradnailer.jpg";
+import boothImage from "../images/gallery/booth.jpg";
+import medicalpresentationImage from "../images/gallery/medicalpresentation.jpg";
+---
+
+<Home title="Gallery">
+    <h1 class="text-center mt-16 text-6xl font-bold">Gallery</h1>
+    <div class="mx-4 mt-16">        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div>
+                <Image src={firstMeetingImage} alt="The First Meeting" class="w-full" />
+            </div>
+            <div>
+                <Image src={theBrainImage} alt="Building of the Brain" class="w-full" />
+            </div>
+            <div>
+                <Image src={marketingPresentationImage} alt="Austin and Caitlyn woking on the marketing presentation" class="w-full" />
+            </div>
+            <div>
+                <Image src={marketingMeetingImage} alt="Marketing Meeting" class="w-full" />
+            </div>
+            <div>
+                <Image src={hospitalImage} alt="A picture at the hospital" class="w-full" />
+            </div>
+            <div>
+                <Image src={microscopicImage} alt="Microscopic" class="w-full" />
+            </div>
+            <div>
+                <Image src={bradnailerImage} alt="Using the brad nailer" class="w-full" />
+            </div>
+            <div>
+                <Image src={boothImage} alt="Jordan, Layla, and Grady holding up the booth" class="w-full" />
+            </div>
+            <div>
+                <Image src={medicalpresentationImage} alt="Some members listening to a remote medical techonology presentation" class="w-full" />
+            </div>
+        </div>
+    </div>
+</Home>
